@@ -4,7 +4,7 @@ import classes from './Footer.module.css';
 export const Footer = () => {
     return (
         <footer>
-        <div class={['container',classes.container].join(' ')} id="footer">
+        <div className={['container',classes.container].join(' ')} id="footer">
           <div>Copyright &copy;2020.</div>
           <div class="textRight">
             Built with <span class="red">&hearts;</span> by

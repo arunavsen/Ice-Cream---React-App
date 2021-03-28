@@ -6,12 +6,12 @@ import classes from '../Header.module.css';
 export const Header = () => {
     return (
         <header>
-        <div class="container react" id="header">
+        <div class="container react">
           <div>
-            <img class={classes.logo} src={logo} alt="Logo" />
+            <img className={classes.logo} src={logo} alt="Logo" />
           </div>
           <div class="textRight">
-            <img src={reactlogo} alt="React" class={classes.reactLogo} /><strong
+            <img src={reactlogo} alt="React" className={classes.reactLogo} /><strong
               >React</strong
             >
           </div>

@@ -1,13 +1,15 @@
 import React from 'react';
 import classes from './Icecream.module.css';
+import Scoop from './Scoop/Scoop';
 
 export const Icecream = () => {
     return (
         <div>
-            <div class={classes.icecream}>
-              <p class={classes.cone}></p>
+            <div className={classes.icecream}>
+              <p className={classes.cone}></p>
               {/*  <p>Please start adding scoops</p> */}
-              <div class={classes.cherry}></div>
+              <Scoop/>
+              <div className={classes.cherry}></div>
             </div>
           </div>
     );
