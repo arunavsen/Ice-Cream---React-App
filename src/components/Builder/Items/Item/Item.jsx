@@ -3,14 +3,14 @@ import classes from "./Item.module.css";
 
 const Item = () => {
   return (
-    <li className="react item" id="item">
+    <li className={classes.item} id="item">
       <span>Vanilla</span>
-      <span className="quantity">2</span>
+      <span className={classes.quantity}>2</span>
       <div class="right">
-        <button type="button" className="plus rounded">
+        <button type="button" className={[classes.plus, 'rounded'].join(' ')}>
           +
         </button>
-        <button type="button" className="minus rounded">
+        <button type="button" className={[classes.minus, 'rounded'].join(' ')}>
           -
         </button>
       </div>

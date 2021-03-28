@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Builder.module.css";
 import Items from "./Items/Items";
+import Modal from './Modal/Modal';
 import TotalPrice from './TotalPrice/TotalPrice';
 
 export const Builder = () => {
@@ -9,9 +10,12 @@ export const Builder = () => {
       <h3>Build your own Ice Cream Sundae</h3>
       <Items />
       <TotalPrice/>
-      <button type="button" className={[classes.order, "rounded"].join()}>
+      <button type="button" className={[classes.order, "rounded"].join(' ')}>
         Add to Cart
       </button>
+      <Modal>
+        Hello Modal
+      </Modal>
     </div>
   );
 };
